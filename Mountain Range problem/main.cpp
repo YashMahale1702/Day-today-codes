@@ -15,9 +15,10 @@ int main() {
   cin >> n;
 
   temp = fact(n);
-  cout << temp << endl;
   catalan_no = fact(2 * n) / (temp * temp);
   catalan_no /= (n + 1);
 
-  cout << "Total no of dyck paths for " << n << " are " << catalan_no;
+  cout << "Total no of mountain ranges for " << n << " are " << catalan_no;
+
+  return 0;
 }
