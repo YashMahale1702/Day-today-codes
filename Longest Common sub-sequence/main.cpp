@@ -4,15 +4,9 @@ using namespace std;
 
 int max(int a, int b) { return a > b ? a : b; }
 
-int main() {
-  string s1, s2;
-
-  getline(cin, s1);
-  getline(cin, s2);
-
+int LCS(string s1, string s2) {
   int table[s1.length() + 1][s2.length() + 1];
 
-  cout << s1.length() << " " << s2.length() << "\n";
   //   init to 0
   memset(table, 0, sizeof(table));
 
@@ -36,6 +30,15 @@ int main() {
     }
     cout << "\n";
   }
+}
+
+int main() {
+  string s1, s2;
+
+  getline(cin, s1);
+  getline(cin, s2);
+
+  cout << "LCS is " << LCS(s1, s2) << endl;
 
   return 0;
 }
