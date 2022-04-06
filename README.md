@@ -1,3 +1,3 @@
 # Code Library
 
-This is my code library consisting of important/frequently implemented codes
+This is my code library.
